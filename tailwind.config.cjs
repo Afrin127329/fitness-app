@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+// eslint-disable-next-line no-undef
+module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
@@ -14,10 +15,11 @@ export default {
         "secondary-400": "#FFCD5B",
         "secondary-500": "#FFC132",
       },
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
       backgroundImage: (theme) => ({
         "gradient-yellowred":
-        "linear-gradient(90deg, #FF616A 0%, #FFC837 100%)",
-      "mobile-home": "url('./assets/HomePageGraphic.png')",
+          "linear-gradient(90deg, #FF616A 0%, #FFC837 100%)",
+        "mobile-home": "url('./assets/HomePageGraphic.png')",
       }),
       fontFamily: {
         dmsans: ["DM Sans", "sans-serif"],
@@ -34,8 +36,7 @@ export default {
       xs: "480px",
       sm: "768px",
       md: "1060px",
-    }
+    },
   },
   plugins: [],
-}
-
+};
