@@ -1,6 +1,6 @@
 FROM node:18-alpine
 WORKDIR /src
 COPY . .
-RUN yarn install
-CMD [ "node", 'src/main.tsx' ]
+RUN npm install
 EXPOSE 8080
+CMD [ "node", 'run', 'dev' ]
